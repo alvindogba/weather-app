@@ -27,11 +27,22 @@ let windSpead = data.wind.speed;
 let hum = data.main.humidity;
 let image = data.weather[0].icon; 
 let weatherDiscription= data.weather[0].description;
+// Create a new Date object
+var currentDate = new Date();
+// Get the current date
+var day = currentDate.getDate();
+var month = currentDate.getMonth() +1;
+var year = currentDate.getFullYear();
+
+var formattedDate = month + '/' + day + '/' + year;
+
+console.log(formattedDate);
+
 
 
 let section =document.getElementById("container")
  section.innerHTML=`<div id="viewb" >
-                        <h1 id="h1">${viewName} &nbsp; <span id="currentDate">(2/34/2024)</h1></span>
+                        <h1 id="h1">${viewName} &nbsp; <span id="currentDate">(${formattedDate})</h1></span>
                         <h2>Temperature:  &nbsp; <span id="temperatureValue">${temperatureCelsius} &deg;C</span></h2>
                         <h2>Wind:  &nbsp; <span id="windSpeed">${windSpead} M/S </span></h2>
                         <h2>Humidity:  &nbsp; <span id="humanidity">${ hum}</span></h2>
