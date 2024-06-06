@@ -3,8 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:  270px;
-    max-height: 400px;
+    height:  max-content;
+    margin-top: 10px;
+  
 
 }
 
@@ -23,12 +24,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 10px;
   
 }
 
 #viewb{
     width: 50%;
-    background-color: rgb(102, 102, 238);
+    
     color: white;
     padding: 15px;
     padding-right: 15px;
@@ -57,8 +59,4 @@
 }
 #btn{
     width: 206px ;
-}
-#userCity:hover{
-    background-color: white;
-    cursor:text;
 }
