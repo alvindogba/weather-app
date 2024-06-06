@@ -1,22 +1,64 @@
-#view{
-    height: 300px;
-    width: 65%;
-    background-color: rgb(102, 102, 238);
-    color: white;
-    text-align: left;
-    padding: 15px;
+
+.hero_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:  270px;
+    max-height: 400px;
+
 }
 
-#view h1, h2{
-    font-size: 24px;
+.myNav{
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+#container{
+    height: max-content;
+    width: 50%;
+    background-color: rgb(102, 102, 238);
+    color: white;
+    /* padding: 15px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+#viewb{
+    width: 50%;
+    background-color: rgb(102, 102, 238);
+    color: white;
+    padding: 15px;
+    padding-right: 15px;
+}
+
+#viewb h1, h2{
+    font-size: 20px;
     font-weight: lighter;
   line-height: 1.5;
 }
 
 #h1{
-    text-align: center;
+    
     font-weight: 900;
     font-size: 36px;
     color: yellow;
 
+}
+
+.img_container{
+    width: 40%;
+}
+#image{
+    height: 60px;
+    width: 60px;
+}
+#btn{
+    width: 206px ;
+}
+#userCity:hover{
+    background-color: white;
+    cursor:text;
 }
